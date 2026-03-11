@@ -7,9 +7,9 @@
     "postiz": "./dist/index.js"
   },
   "scripts": {
-    "dev": "tsup --watch",
-    "build": "tsup",
-    "start": "node ./dist/index.js",
+    "dev": "node init && tsup --watch",
+    "build": "node init && tsup",
+    "start": "node init && node ./dist/index.js",
     "publish": "tsup && pnpm publish --access public --no-git-checks"
   },
   "files": [
